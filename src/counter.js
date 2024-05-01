@@ -7,6 +7,12 @@ export const initializeCounter = (doc = globalThis.document) => {
 
   const render = () => {
     countElement.textContent = count;
+
+    if (count < 0) {
+      import('./banner.js').then(({ addBanner }) => {
+        addBanner(`You're below zero!`);
+      });
+    }
   };
 
   const increment = () => {
