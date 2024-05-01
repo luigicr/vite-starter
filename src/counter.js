@@ -1,7 +1,15 @@
+import { counter } from './counter.module.css';
+import './sassy.scss';
+import './nested-css.css';
+
+console.log(count);
+
 export const initializeCounter = (doc = globalThis.document) => {
   const countElement = doc.getElementById('count');
   const incrementButton = doc.getElementById('increment');
   const decrementButton = doc.getElementById('decrement');
+
+  countElement.classList.add(counter);
 
   let count = 0;
 

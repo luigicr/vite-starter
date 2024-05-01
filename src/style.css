@@ -113,3 +113,13 @@ button:disabled {
     color: #747bff;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #333333;
+    background-color: #213547;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
