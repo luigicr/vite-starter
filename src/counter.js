@@ -2,7 +2,7 @@ import { counter } from './counter.module.css';
 import './sassy.scss';
 import './nested-css.css';
 
-console.log(count);
+console.log(counter);
 
 export const initializeCounter = (doc = globalThis.document) => {
   const countElement = doc.getElementById('count');
